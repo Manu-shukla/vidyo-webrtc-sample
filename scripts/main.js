@@ -1,12 +1,12 @@
 <!-- hide script from old browsers
 
-   var vidyoClientObj = null;
+   var vidyoClientObj = null,
 
 // configuration of behavior for this code
-var useConsoleForLogging = true;
-var useAlertsForLogging = false;
-var useWebRTC = true;
-var sessionManager = 'https://conf.inclusivedesign.ca';
+ useConsoleForLogging = true,
+ useAlertsForLogging = false,
+ useWebRTC = true,
+ sessionManager = 'https://conf.inclusivedesign.ca';
 if (useWebRTC) {
     var pluginType = 'VidyoWebRTC';
 } else {
@@ -15,16 +15,16 @@ if (useWebRTC) {
 var willStartOnLoad = true;			// if true, will invoke start() on plug-in object from bodyLoaded()
 
 // Toggle Icon code
-var img_camera_array= new Array('./images/camera_privacy.png','./images/camera.png');
-var img_mic_array= new Array('./images/mic_mute.png','./images/mic.png');
-var img_speaker_array= new Array('./images/speaker_mute.png','./images/speaker.png');
-var img_share_array= new Array('./images/unshare.png','./images/share.png');
-var count_camera=-1;
-var count_mic=-1;
-var count_speaker=-1;
-var count_share=-1;
-var numberOfShares = 0;
-var participantsCount;
+var img_camera_array= new Array('./images/camera_privacy.png','./images/camera.png'), 
+ img_mic_array= new Array('./images/mic_mute.png','./images/mic.png'),
+ img_speaker_array= new Array('./images/speaker_mute.png','./images/speaker.png'),
+ img_share_array= new Array('./images/unshare.png','./images/share.png'),
+ count_camera=-1;
+ var count_mic=-1;
+  var count_speaker=-1;
+   var count_share=-1;
+ var numberOfShares = 0;
+ var participantsCount;
 
 
 function isChrome() {
