@@ -587,7 +587,12 @@ function toggleCameraIcon()
 
     var adjustLayoutWithShare = function() {
         setParticipantStripVisibility();
-
+	   /*instead of 4 times using the 'var' keyword we can use the lop for doing so.
+	    for(int i=0; <4; i++)
+	      {
+	      var participantDiv[i] = document.getElementById("participantDiv[i]");
+	      } */
+	    
         var participantDiv0 = document.getElementById("participantDiv0");
         var participantDiv1 = document.getElementById("participantDiv1");
         var participantDiv2 = document.getElementById("participantDiv2");
